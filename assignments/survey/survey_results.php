@@ -60,6 +60,7 @@ if (!isset($_SESSION['submitted'])) {
         <main role="main">
             <div id="survey">
               <h1>Website Survey Results</h1>
+              <p id="hint">To view your survey results scroll to the bottom of the page</p>
               <?php
               $myfile = fopen("results.txt", "r") or die("Unable to open file!");
               while(!feof($myfile)) {

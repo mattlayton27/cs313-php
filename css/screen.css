@@ -9,7 +9,7 @@ body {
 
 /********Header********/
 header {
-    background-color: purple;
+    background-color: blue;
     margin-bottom: -16px;
 }
 header h1 {
@@ -36,7 +36,7 @@ nav a {
    font-size: 1.5em;
 }
 nav a:hover {
-    color: purple;
+    color: lightblue;
 }
 
 /********Main********/
@@ -68,6 +68,11 @@ main p {
 }
 #survey textarea {
   margin-left: 18px;
+}
+#hint {
+  margin-top: 30px;
+  font-style: italic;
+  color: red;
 }
 /********Responsive********/
 @media screen and (max-width: 1024px){
