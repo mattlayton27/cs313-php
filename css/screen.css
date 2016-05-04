@@ -109,7 +109,7 @@ main p {
         flex: 1;
     }
     #introduction_fix {
-      margin-left: -25px;
+      margin-left: -35px;
     }
     nav a{
         font-size: 4vw;
@@ -139,7 +139,7 @@ main p {
     #survey {
       margin-left: 5px;
     }
-    #survey h1, h2, p, a {
+    #survey h1 h2 p a {
       margin-left: -5px;
     }
     #introduction img {
