@@ -45,33 +45,30 @@ main{
     margin: auto;
     margin-bottom: 5%;
 }
-main h2 {
-    font-size: 2.4em;
-}
-main h3 {
-    font-size: 1em;
-}
 main p {
     line-height: 24px;
 }
-
-/********Footer********/
-footer {
-    background-color: #4e4e4e;
+#homepage img {
+  width: 100%;
 }
-footer div {
-    width: 80%;
-    margin: auto;
+#introduction img {
+  width: 300px;
 }
-footer a {
-    margin-right: 20px;
-    text-decoration: none;
-    color: white;
+#survey {
+  line-height: 30px;
 }
-footer a:hover {
-    text-decoration: underline;
+#survey input {
+  margin-left: 18px;
 }
-
+#survey span {
+  margin-left: 18px;
+}
+#survey a {
+  margin-left: 18px;
+}
+#survey textarea {
+  margin-left: 18px;
+}
 /********Responsive********/
 @media screen and (max-width: 1024px){
     body {
@@ -103,24 +100,26 @@ footer a:hover {
         bottom: 0;
         display: flex;
         flex-direction: row;
-        margin-bottom: 0;
     }
     nav>div{
         width: 100%;
     }
     nav ul{
         justify-content: space-between;
-        margin-left: -40px;
     }
     nav li{
         margin: 0;
         flex: 1;
+    }
+    #introduction_fix {
+      margin-left: -25px;
     }
     nav a{
         font-size: 4vw;
         padding: 0;
     }
     main {
+        margin-top: 20px;
         width: 100%;
     }
     main h2 {
@@ -133,20 +132,5 @@ footer a:hover {
     main p{
         width: 100%;
         font-size: 16px;
-    }
-    footer{
-        font-size: 5vw;
-        margin-bottom: 5em;
-    }
-    footer div {
-        width: 100%;
-    }
-    footer a {
-        font-size: 4vw;
-    }
-}
-@media screen and (min-width: 1700px){
-    body>div{
-        font-size: 1.5vw;
     }
 }
