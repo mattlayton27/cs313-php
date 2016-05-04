@@ -136,6 +136,12 @@ main p {
     main h1, h2, p, a {
       margin-left: 5px;
     }
+    #survey {
+      margin-left: 5px;
+    }
+    #survey h1, h2, p, a {
+      margin-left: -5px;
+    }
     #introduction img {
       margin-left: 5px;
     }
