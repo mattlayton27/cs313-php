@@ -1,0 +1,152 @@
+/*@import "normalize.min.css";*/
+
+/*****Entire Document*****/
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 24px;
+}
+/*****Navigation*****/
+#console_navigation ul {
+  margin: auto;
+  list-style-type: none;
+  background-color: green;
+  padding-top: 5px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-left: -40px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+#hamburger_menu {
+  display: none;
+}
+#mobile_navigation {
+  display: none;
+}
+
+
+/*****Header*****/
+header img {
+  width: 100%;
+  margin-left: -8px;
+}
+
+/*****Main*****/
+main {
+  width: 85%;
+  margin: auto;
+  margin-top: 25px;
+}
+tr:nth-child(even) {
+    background: #7DF481;
+}
+td {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+label {
+  margin-right: 10px;
+}
+#log_out {
+  margin-top: 20px;
+}
+#col1 {
+  width: 40%;
+}
+form {
+  margin-bottom: 10px;
+}
+.error {
+  color: red;
+}
+
+/***** Screen Size @ 1024px*****/
+@media screen and (max-width: 1024px){
+  body {
+    width: 96%;
+  }
+  main {
+    margin-left: 2px;
+    width: 100%;
+  }
+  p {
+    font-size: 3.5vw;
+  }
+  #col1 {
+    width: 100%;
+  }
+  #col2 {
+    width: 100%;
+  }
+  header img {
+    width: 100%;
+    margin-left: -2px;
+  }
+  #login {
+    margin-left: -25px;
+  }
+  #login_form {
+    margin-left: 30px;
+  }
+  h1 {
+    font-size: 9vw;
+    line-height: 35px;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  form {
+    font-size: 4vw;
+  }
+  fieldset {
+    width: 300px;
+  }
+  table {
+    width: 300%;
+  }
+  td {
+    padding: 5px;
+  }
+  #log_out, #view_all {
+    margin-left: 2px;
+  }
+
+  /** jQuery Menu **/
+  #console_navigation ul{
+    display: none;
+  }
+  #hamburger_menu {
+    display: inline;
+    position: absolute;
+    width: 20px;
+    right: 10px;
+  }
+  #mobile_navigation {
+    display: none;
+    background-color: green;
+    margin-bottom: -41px;
+    margin-left: -2px;
+    width: 100%;
+    margin-top: -8px;
+    line-height: 40px;
+  }
+  #mobile_navigation ul {
+    list-style-type: none;
+  }
+  #mobile_navigation li {
+    padding-left: 80px;
+  }
+  header img {
+    margin-top: 25px;
+  }
+}
