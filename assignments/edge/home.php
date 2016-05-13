@@ -6,7 +6,7 @@
     </head>
     <body>
         <nav>
-            <?php include $_SERVER['DOCUMENT_ROOT']. '/modules/navigation.php'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT']. '/assignments/edge/modules/navigation.php'; ?>
         </nav>
         <header>
             <img src="media/images/landscape.jpg" alt="Image: Lawn" title="The Edge Landscape Maintenance">
