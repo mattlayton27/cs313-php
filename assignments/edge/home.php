@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Home | The Edge Landscaping</title>
-        <?php include $_SERVER['DOCUMENT_ROOT']. 'modules/head.php'; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']. '/modules/head.php'; ?>
     </head>
     <body>
         <nav>
-            <?php include $_SERVER['DOCUMENT_ROOT']. 'modules/navigation.php'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT']. '/modules/navigation.php'; ?>
         </nav>
         <header>
             <img src="media/images/landscape.jpg" alt="Image: Lawn" title="The Edge Landscape Maintenance">
