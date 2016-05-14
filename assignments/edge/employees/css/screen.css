@@ -45,6 +45,9 @@ main {
   margin: auto;
   margin-top: 25px;
 }
+table {
+  width: 105%;
+}
 tr:nth-child(even) {
     background: #7DF481;
 }
@@ -112,7 +115,7 @@ form {
     width: 300px;
   }
   table {
-    width: 300%;
+    width: 350%;
   }
   td {
     padding: 5px;
@@ -129,7 +132,7 @@ form {
     display: inline;
     position: absolute;
     width: 25px;
-    right: 7px;
+    right: 10px;
   }
   #mobile_navigation {
     display: none;
@@ -138,7 +141,7 @@ form {
     margin-left: -2px;
     width: 100%;
     margin-top: -8px;
-    line-height: 40px;
+    line-height: 45px;
   }
   #mobile_navigation ul {
     list-style-type: none;
