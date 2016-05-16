@@ -43,7 +43,7 @@
                   <label>Phone Number (ex. 555-555-5555):</label><br>
                   <input type="text" name="edit_phone_number" value="<?php echo $customer['phone_number']; ?>"><br><br>
                   <label>Comments:</label><br>
-                  <textarea name="edit_comments" cols="30" rows="3"><?php echo $customer['name']; ?></textarea><br><br>
+                  <textarea name="edit_comments" cols="30" rows="3"><?php echo $customer['comments']; ?></textarea><br><br>
                   <input type="submit" value="Submit">
                 </fieldset>
               </form>
