@@ -13,6 +13,10 @@
         </header>
         <main>
           <div class="edit_customer">
+              <form action="index.php" method="post">
+                <input type="hidden" name="action" value="home">
+                <input type="submit" value="Back">
+              </form>
               <h1>Edit Customer</h1>
               <?php if (!empty($edit_error)) { ?>
                 <p class="error"><?php echo $edit_error; ?></p>
