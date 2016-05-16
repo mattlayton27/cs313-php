@@ -45,7 +45,7 @@ function get_customer_by_id($customer_id) {
   $statement = $db->prepare($query);
   $statement->bindValue(":customer_id", $customer_id);
   $statement->execute();
-  $customer = $statement->fetchAll();
+  $customer = $statement->fetch();
   $statement->closeCursor();
   return $customer;
 }

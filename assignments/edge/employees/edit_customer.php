@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Edit Customers | The Edge Landscaping</title>
+        <title>Employees | The Edge Landscaping</title>
         <?php include $_SERVER['DOCUMENT_ROOT']. '/assignments/edge/employees/modules/head.php'; ?>
     </head>
     <body>
