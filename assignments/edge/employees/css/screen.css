@@ -41,24 +41,30 @@ header img {
 
 /*****Main*****/
 main {
+  display: flex;
+  flex-flow: row wrap;
   width: 85%;
   margin: auto;
   margin-top: 25px;
 }
+.col1 {
+  width: 40%;
+}
+.col2 {
+  margin-left: 130px;
+  width: 40%;
+}
 table {
-  width: 105%;
+  width: 117%;
 }
 tr:nth-child(even) {
     background: #7DF481;
 }
 td {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-}
-label {
-  margin-right: 10px;
 }
 #log_out {
   margin-top: 30px;
@@ -72,7 +78,15 @@ form {
 .error {
   color: red;
 }
-
+.added {
+  color: green;
+}
+.changed_customer {
+  color: green;
+}
+#customer_table {
+  margin-left: 0px;
+}
 /***** Screen Size @ 1024px*****/
 @media screen and (max-width: 1024px){
   body {
@@ -122,6 +136,9 @@ form {
   }
   #log_out, #view_all {
     margin-left: 2px;
+  }
+  .col2 {
+    margin-left: 0px;
   }
 
   /** jQuery Menu **/

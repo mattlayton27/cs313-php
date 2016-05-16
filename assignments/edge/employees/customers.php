@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>Customers | The Edge Landscaping</title>
-        <?php include $_SERVER['DOCUMENT_ROOT']. '/assignments/edge/employees/modules/head.php'; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']. '/public/cs313/homepage/assignments/edge/employees/modules/head.php'; ?>
     </head>
     <body>
-        <main>
+        <main id="customer_table">
           <form action="index.php" method="post">
             <input type="hidden" name="action" value="home">
             <input type="submit" value="Back">
@@ -29,6 +29,20 @@
                       <td><?php echo $customer['zip_code']; ?></td>
                       <td><?php echo $customer['phone_number']; ?></td>
                       <td><?php echo $customer['comments']; ?></td>
+                      <td class="delete_customer">
+                        <form action="index.php" method="post">
+                            <input type="hidden" name="action" value="delete_customer">
+                            <input type="hidden" name="customer_id" value="<?php echo $customer['customer_id']; ?>">
+                            <input type="submit" value="Delete">
+                        </form>
+                      </td>
+                      <td class="edit_customer">
+                        <form action="index.php" method="post">
+                            <input type="hidden" name="action" value="edit_customer_page">
+                            <input type="hidden" name="customer_id" value="<?php echo $customer['customer_id']; ?>">
+                            <input type="submit" value="Edit">
+                        </form>
+                      </td>
                   </tr>
               <?php endforeach; ?>
           </table>

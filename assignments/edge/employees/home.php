@@ -2,18 +2,21 @@
 <html>
     <head>
         <title>Employees | The Edge Landscaping</title>
-        <?php include $_SERVER['DOCUMENT_ROOT']. '/assignments/edge/employees/modules/head.php'; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']. '/public/cs313/homepage/assignments/edge/employees/modules/head.php'; ?>
     </head>
     <body>
         <nav>
-            <?php include $_SERVER['DOCUMENT_ROOT']. '/assignments/edge/employees/modules/navigation.php'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT']. '/public/cs313/homepage/assignments/edge/employees/modules/navigation.php'; ?>
         </nav>
         <header>
             <img src="../media/images/landscape.jpg" alt="Image: Lawn" title="The Edge Landscape Maintenance">
         </header>
         <main>
-          <h1>Customer Information</h1>
           <div id="col1">
+            <h1>Customer Information</h1>
+            <?php if (!empty($changed_customer)) { ?>
+              <p class="changed_customer"><?php echo $changed_customer; ?></p>
+            <?php } ?>
             <label>Search By Work Day:</label>
             <form action="index.php" method="post">
               <fieldset>
@@ -47,6 +50,42 @@
               <input type="hidden" name="action" value="log_out">
               <input type="submit" value="Log Out">
             </form>
+          </div>
+          <div class="col2">
+              <h2>Add Customer</h2>
+              <?php if (!empty($addError)) { ?>
+                <p class="error"><?php echo $addError; ?></p>
+              <?php } else if (!empty($addedCustomer)) {  ?>
+                <p class="added"><?php echo $addedCustomer; ?></p>
+              <?php } ?>
+              <form action="index.php" method="post">
+                <input type="hidden" name="action" value="add_customer">
+                <fieldset>
+                  <label>Select a Work Day: </label><br>
+                  <select name="customer_work_day_id">
+                    <?php foreach ($work_days as $work_day) : ?>
+                      <option value="<?php echo $work_day['work_day_id']; ?>">
+                        <?php echo $work_day['work_day']; ?>
+                      </option>
+                    <?php endforeach; ?>
+                  </select><br><br>
+                  <label>Name:</label><br>
+                  <input type="text" name="customer_name"><br><br>
+                  <label>Street Address:</label><br>
+                  <input type="text" name="customer_street_address"><br><br>
+                  <label>City:</label><br>
+                  <input type="text" name="customer_city"><br><br>
+                  <label>State (ex. Utah, Nevada, etc):</label><br>
+                  <input type="text" name="customer_state"><br><br>
+                  <label>Zip Code:</label><br>
+                  <input type="text" name="customer_zip_code"><br><br>
+                  <label>Phone Number (ex. 555-555-5555):</label><br>
+                  <input type="text" name="customer_phone_number"><br><br>
+                  <label>Comments:</label><br>
+                  <textarea name="customer_comments" cols="30" rows="3"></textarea><br><br>
+                  <input type="submit" value="Submit">
+                </fieldset>
+              </form>
           </div>
         </main>
     </body>
