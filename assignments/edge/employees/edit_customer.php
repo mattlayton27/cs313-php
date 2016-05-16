@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Employees | The Edge Landscaping</title>
+        <title>Edit Customers | The Edge Landscaping</title>
         <?php include $_SERVER['DOCUMENT_ROOT']. '/assignments/edge/employees/modules/head.php'; ?>
     </head>
     <body>
@@ -15,7 +15,7 @@
           <div class="edit_customer">
               <form action="index.php" method="post">
                 <input type="hidden" name="action" value="home">
-                <input type="submit" value="Back">
+                <input type="submit" value="Back To Home">
               </form>
               <h1>Edit Customer</h1>
               <?php if (!empty($edit_error)) { ?>
