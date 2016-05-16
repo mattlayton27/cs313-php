@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Employees | The Edge Landscaping</title>
-        <?php include $_SERVER['DOCUMENT_ROOT']. '/public/cs313/homepage/assignments/edge/employees/modules/head.php'; ?>
+        <title>Edit Customers | The Edge Landscaping</title>
+        <?php include $_SERVER['DOCUMENT_ROOT']. '/assignments/edge/employees/modules/head.php'; ?>
     </head>
     <body>
         <nav>
-            <?php include $_SERVER['DOCUMENT_ROOT']. '/public/cs313/homepage/assignments/edge/employees/modules/navigation.php'; ?>
+            <?php include $_SERVER['DOCUMENT_ROOT']. '/assignments/edge/employees/modules/navigation.php'; ?>
         </nav>
         <header>
             <img src="../media/images/landscape.jpg" alt="Image: Lawn" title="The Edge Landscape Maintenance">

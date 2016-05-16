@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Customers | The Edge Landscaping</title>
-        <?php include $_SERVER['DOCUMENT_ROOT']. '/public/cs313/homepage/assignments/edge/employees/modules/head.php'; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']. '/assignments/edge/employees/modules/head.php'; ?>
     </head>
     <body>
         <main id="customer_table">
