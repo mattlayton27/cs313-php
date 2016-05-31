@@ -71,6 +71,12 @@ input {
 .error {
   color: red;
 }
+#no_flex {
+  display: block;
+}
+#company {
+  width: 300px;
+}
 
 /***** Screen Size @ 1024px*****/
 @media screen and (max-width: 560px){

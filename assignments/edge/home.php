@@ -14,11 +14,8 @@
         <main>
             <div class="col1">
                 <h1>The Edge</h1>
-                <p>paoisdfpaiodhfaoidf padsoihf apdfioh aspdfoih apdfioha pdfoh aspdfiha dsfka ;lsdfkn as;dfkew
-                    apsodif posnd fpofn epoina foin fpona ofin wpoenf ionapsodinf asoidfn paonf paodn fpwoeinf poawein
-                    poiansd fpoainsd fposnf oawine fpoaeine poienf epoanef oaine fpioan efoina peofina psoeinf apoeinf
-                    poinaef aewopifna woefin aewpoifna wpeofinaw epofina wepfoina ewfpoinaw epfoinapweoifna poiefn aeof
-                    poaieap oanwief awpoinwfe poinef poin dpkoan dspokna poeifh apoeifj apowiehf pawoiehf paweoihf apwe</p>
+                <p>We are a company devoted to providing the best lawn care possible to your property, along with services
+                to your sprinklers, gardens and bushes. We guaruntee you will be satisfied with our precise and thorough care.</p>
             </div>
             <div class="col2">
                 <h2>Employee Login</h2>

@@ -11,8 +11,10 @@
         <header>
             <img src="media/images/landscape.jpg" alt="Image: Lawn" title="The Edge Landscape Maintenance">
         </header>
-        <main>
-
+        <main id="no_flex">
+            <h1>Locations</h1>
+            <p>Our company is located within the red boundaries:</p>
+            <img src="media/images/location.png" alt="Image: Location" title="Ogden Area">
         </main>
     </body>
 </html>
